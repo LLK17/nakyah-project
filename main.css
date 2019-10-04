@@ -1,0 +1,21 @@
+html,body{
+  height:100%;
+  background-color:#f7f7f7;
+}
+
+input{
+  height:5vh;
+  width:80vh;
+  border-radius: 2vh;
+  border:0;
+  padding:1vh;
+  margin:3vh;
+}
+
+
+
+#dataGrid{
+  text-align:center;
+  /* line-height:vh; */
+  border-radius:
+}
