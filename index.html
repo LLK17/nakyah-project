@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" href="main.css">
+
+ <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
  <script src="main.js"></script>
+ <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-<div id="dataGrid">
-<iframe src="https://scratch.mit.edu/projects/247307190/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
+<div id="dataGrid">
+  <iframe src="https://scratch.mit.edu/projects/334596635/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 <form>
-  <input type="text" placeholder="Name"></input>
+  <input id="name" type="text" placeholder="Name"></input>
   <br>
-  <select>
+  <select id="gender">
+    <option value="" disabled selected> Gender</option>
     <option value="boy">Boy</option>
     <option value="girl">Girl</option>
   </select>
   <br>
-  <input type="number" placeholder="Age"></input>
-  <br> 
-  <input type="text" placeholder="Choice #1"></input>
+  <input id="age" type="number" placeholder="Age"></input>
   <br>
-  <input type="text" placeholder="Choice #2"></input>
+  <select id="ending">
+    <option value="" disabled selected>Which ending did you pick?</input>
+    <option value="violent">Violent</input>
+    <option value="scary">Scary</input>
+    <option value="happy">Happy</input>
+    <option value="sad">Sad</input>
+  </select>
   <br>
-  <input type="text" placeholder="Choice #3"></input>
+  <div id="result"></div>
   <br>
-  <input type="text" placeholder="Choice #4"></input>
-  <br>
-  <button>Submit my answers!</button>
+  <button id="submit" type="button">Submit my answers!</button>
   <br>
 </form>
 </div>
+
 </body>
 </html>
